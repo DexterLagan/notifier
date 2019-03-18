@@ -12,8 +12,7 @@
          maybe-copy-file             ; (maybe-copy-file source destination error-message exists-ok?)
          show-error-message          ; (show-error-message msg)
          define-command-line-params  ; (define-command-line-params program-name debug-switch)
-         string-contains?*           ; (string-contains?* str keywords)
-         )
+         string-contains?*)          ; (string-contains?* str keywords)
 
 ;;; purpose
 
