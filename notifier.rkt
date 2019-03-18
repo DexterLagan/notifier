@@ -6,7 +6,6 @@
 (require "consts.rkt")
 (require "common.rkt")
 (require "config.rkt")
-(require "nodixia-queries.rkt")   ; nodixia-dispo-products-lite
 (module+ test (require rackunit))
 
 ;;; Version history
@@ -26,17 +25,8 @@
 ;      generate a list of matching products from the stock list and the keywords
 ;      send an email to the address with the matching product lines
 
-; config file format:
-; [romain]
-; email=romain@gmail.com
-; keywords=Lenovo X260, Lenovo X270, Lenovo X1
-; [dexter]
-; email=dexterlagan@gmail.com
-; keywords=Lenovo X1 i7, Lenovo T420 i7, Lenovo T420s
-
 ;;; future plans
 
-; to produce a generic SQL notifier
 ; add support for concurrency
 ; production-grade
 
@@ -67,7 +57,7 @@
 ;; returns a list of product lines (strings) given a product query
 ;; query must return a list of #("refcom" "qty" "designation" "price")
 (define (get-dispo-products query)
-  (define dispo-products (query-rows db nodixia-dispo-products-lite))
+  (define dispo-products (query-rows db query))
   (map product-vec->product-str dispo-products))
 
 ;;; main
@@ -80,14 +70,14 @@
   (get-db-settings db-config
                    *default-database* *default-hostname* *default-username* *default-password*))
 ; For future use: use a query from the config file
-;(define nodixia-dispo-products-lite (get-config-item-or-die db-config "query="))
+(define dispo-products-query (get-config-item-or-die db-config "query="))
 
 (displayln "Connecting to database...")
 (define db (connect-to-db hostname database username password))
 (unless db (die "Unable to connect to database."))
 
 (displayln "Querying database...")
-(define dispo-products (get-dispo-products nodixia-dispo-products-lite))
+(define dispo-products (get-dispo-products dispo-products-query))
 
 (displayln "Processing configuration...")
 (process-config-items process-subscriber
