@@ -7,7 +7,8 @@ Usage:
 1) Configure your MySQL server settings in notifier.conf;
 2) Configure the item listing query in the [Notifier] section of the same file;
 3) Add one section per receiver in the configuration file (see below for sample config);
-4) Run Notifier and each keyword matched in the configuration file will result in an e-mail sent to the specified address with the matches.
+4) Run Notifier and each keyword matched in the configuration file will result in an e-mail sent to 
+the specified address with the matches.
 
 Sample configuration file:
 
