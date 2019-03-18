@@ -1,9 +1,8 @@
 #lang racket
 (require db)
 (module+ test (require rackunit))
-(provide connect-to-db          ; (connect-to-db hostname database username password)
-         keywords->sql-like-lst ; (keywords->sql-like-lst str))
-         )
+(provide connect-to-db           ; (connect-to-db hostname database username password)
+         keywords->sql-like-lst) ; (keywords->sql-like-lst str))
 
 ;;; defs
          
