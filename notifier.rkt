@@ -15,10 +15,10 @@
 ;;; purpose
 
 ; to automatically send notification emails when products matching keywords appear
-; in Nodixia's stock
+; in an SQL feed.
 
-; 1) run a query that lists all fiches with stock > 0,
-;    fetch designation, quantity, HT price
+; 1) run a query that lists items, for example:
+;    fetch product, designation, quantity, price
 ; 2) read the email addresses from a config file, along with keyword list string
 ; 3) for each email address in the mailing list,
 ;      fetch keyword list for the email address
