@@ -12,6 +12,7 @@ the specified address with the matches.
 
 Sample configuration file:
 
+<pre>
 [Notifier]
 hostname=my-hostname
 database=my-db
@@ -32,6 +33,7 @@ email=sadok@xxxxx.com
 keywords=Lenovo W520, Lenovo W530, Lenovo W540, Lenovo x240, Lenovo T420, Dell M4800
 greeting=Salut [name];;  J'ai trouvé les machines suivantes sur le stock:;;
 footer=;;Bonne journée!,;;Notifier
+</pre>
 
 Regards,
 
