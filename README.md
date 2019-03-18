@@ -37,5 +37,4 @@ footer=;;Bonne journée!,;;Notifier
 
 Regards,
 
-Dexter Santucci
-March 2019
+Dexter Santucci - March 2019
