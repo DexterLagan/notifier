@@ -1,4 +1,4 @@
-# notifier
+# Notifier
 
 Notifier is a generic SQL match notification system.
 1) Configure your server in the notifier.conf;
