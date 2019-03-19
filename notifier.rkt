@@ -10,6 +10,7 @@
 
 ;;; Version history
 
+; v1.1 - removed racket/gui requirement
 ; v1.0 - initial release.
 
 ;;; purpose
