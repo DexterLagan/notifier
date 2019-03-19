@@ -41,7 +41,7 @@
   (string-append "Invalid item configuration. Sample item syntax:   \n"
                  "[Dexter]\n"
                  "name=Dexter"
-                 "email=dexterlagan@gmail.com\n"
+                 "email=*********@gmail.com\n"
                  "keywords=Lenovo T420s, Lenovo X1 i7\n"
                  "greeting=Hi [name],\n\nthe following products have been found:"
                  "footer=Regards,\n\nNodixia Notifier\n"))
