@@ -22,7 +22,7 @@ query=SELECT product_refcom, product_qty, produit_descript_designation, product_
 
 [Dexter]
 name=Dexter
-email=dexterlagan@gmail.com
+email=********n@gmail.com
 keywords=Lenovo X1 i7, Lenovo T420, Lenovo T420s, Dell M4800
 greeting=Hi [name],;;  The following products have appeared in Nodixia's feed:;;
 footer=;;Regards,;;Notifier
