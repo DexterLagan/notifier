@@ -35,6 +35,6 @@ greeting=Salut [name];;  J'ai trouvé les machines suivantes sur le stock:;;
 footer=;;Bonne journée!,;;Notifier
 </pre>
 
-Regards,
+## License
 
-Dexter Santucci - March 2019
+Notifier is free software; see [LICENSE](https://github.com/DexterLagan/notifier/blob/main/LICENSE) for more details.
