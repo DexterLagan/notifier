@@ -2,7 +2,7 @@
 
   Notifier is a generic SQL match notification system written in Racket.
 
-Usage:
+## Usage
 
 1) Configure your MySQL server settings in notifier.conf;
 2) Configure the item listing query in the [Notifier] section of the same file;
@@ -10,7 +10,7 @@ Usage:
 4) Run Notifier and each keyword matched in the configuration file will result in an e-mail sent to 
 the specified address with the matches.
 
-Sample configuration file:
+## Sample configuration file
 
 <pre>
 [Notifier]
@@ -27,9 +27,9 @@ keywords=Lenovo X1 i7, Lenovo T420, Lenovo T420s, Dell M4800
 greeting=Hi [name],;;  The following products have appeared in Nodixia's feed:;;
 footer=;;Regards,;;Notifier
 
-[Sadok]
-name=Sadok
-email=sadok@xxxxx.com
+[Johnny]
+name=Johnny
+email=johnny@xxxxx.com
 keywords=Lenovo W520, Lenovo W530, Lenovo W540, Lenovo x240, Lenovo T420, Dell M4800
 greeting=Salut [name];;  J'ai trouvé les machines suivantes sur le stock:;;
 footer=;;Bonne journée!,;;Notifier
